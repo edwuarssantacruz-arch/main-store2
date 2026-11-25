@@ -1,0 +1,283 @@
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    color: white;
+}
+
+
+/* MENÚ PRINCIPAL */
+
+header {
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #d4af37;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.btn-login {
+    border: 1px solid #d4af37;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-register {
+    background: #d4af37;
+    color: #111;
+    padding: 11px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn-register:hover {
+    background: #f0cc55;
+    color: #111;
+}
+
+
+/* PORTADA PRINCIPAL */
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.95) 15%,
+            rgba(0,0,0,0.65) 60%,
+            rgba(0,0,0,0.25)
+        ),
+        url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1800&q=85');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h4 {
+    color: #d4af37;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero-content h1 span {
+    color: #d4af37;
+}
+
+.hero-content p {
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-gold {
+    background: #d4af37;
+    color: #111;
+}
+
+.btn-gold:hover {
+    background: #f0cc55;
+}
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #111;
+}
+
+
+/* CATEGORÍAS */
+
+.categories {
+    padding: 65px 8%;
+    text-align: center;
+    background: #181818;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.section-title span {
+    color: #d4af37;
+}
+
+.section-description {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.category {
+    background: #222;
+    padding: 35px 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.category:hover {
+    transform: translateY(-7px);
+    border-color: #d4af37;
+}
+
+.category i {
+    font-size: 42px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.category h3 {
+    margin-bottom: 10px;
+}
+
+.category p {
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* SOBRE NOSOTROS */
+
+.about {
+    padding: 65px 10%;
+    text-align: center;
+    background: #111;
+}
+
+.about p {
+    color: #bbb;
+    max-width: 750px;
+    margin: 20px auto;
+    line-height: 1.9;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background: #080808;
+    padding: 30px 8%;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+footer h3 {
+    color: #d4af37;
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #888;
+    font-size: 12px;
+    margin: 8px;
+}
+
+
+/* DISEÑO RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 70px 7%;
+        min-height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .category-container {
+        grid-template-columns: 1fr;
+    }
+
+}

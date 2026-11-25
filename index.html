@@ -1,15 +1,186 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Store</title>
-    <link rel="icon" type="image/png" href="src/icons/Main-Store-ICONO.png">
+
+    <title>Licores Los Parceros</title>
+
+    <link rel="icon" type="image/png"
+          href="src/icons/Main-Store-ICONO.png">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles/style.css">
+
 </head>
+
 <body>
 
-    <a href="src/signin.html">signin</a> |
-    <a href="src/signup.html">signup</a>
+    <!-- MENÚ PRINCIPAL -->
+
+    <header>
+
+        <div class="logo">
+            <i class="fa-solid fa-wine-bottle"></i>
+            LOS <span>PARCEROS</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#categorias">Categorías</a>
+            <a href="#nosotros">Nosotros</a>
+
+            <a href="src/signin.html" class="btn-login">
+                Iniciar sesión
+            </a>
+
+            <a href="src/signup.html" class="btn-register">
+                Registrarse
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- PORTADA PRINCIPAL -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <h4>BIENVENIDOS A NUESTRA TIENDA</h4>
+
+            <h1>
+                LICORES <span>LOS PARCEROS</span>
+            </h1>
+
+            <p>
+                Encuentra una selección de bebidas para tus
+                celebraciones y ocasiones especiales.
+                Calidad, variedad y buen servicio en un solo lugar.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="src/signin.html" class="btn-gold">
+                    <i class="fa-solid fa-user"></i>
+                    Iniciar sesión
+                </a>
+
+                <a href="src/signup.html" class="btn-outline">
+                    Crear una cuenta
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORÍAS -->
+
+    <section class="categories" id="categorias">
+
+        <h2 class="section-title">
+            NUESTRAS <span>CATEGORÍAS</span>
+        </h2>
+
+        <p class="section-description">
+            Conoce algunas de las categorías de nuestra tienda.
+        </p>
+
+        <div class="category-container">
+
+            <div class="category">
+
+                <i class="fa-solid fa-wine-bottle"></i>
+
+                <h3>Aguardientes</h3>
+
+                <p>
+                    Variedad de aguardientes para diferentes ocasiones.
+                </p>
+
+            </div>
+
+            <div class="category">
+
+                <i class="fa-solid fa-whiskey-glass"></i>
+
+                <h3>Whiskies</h3>
+
+                <p>
+                    Diferentes opciones de whisky para los amantes
+                    de esta bebida.
+                </p>
+
+            </div>
+
+            <div class="category">
+
+                <i class="fa-solid fa-champagne-glasses"></i>
+
+                <h3>Vinos y otros</h3>
+
+                <p>
+                    Encuentra diferentes bebidas para ocasiones especiales.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE NOSOTROS -->
+
+    <section class="about" id="nosotros">
+
+        <h2 class="section-title">
+            SOBRE <span>NOSOTROS</span>
+        </h2>
+
+        <p>
+            En Licores Los Parceros queremos ofrecer una experiencia
+            sencilla y agradable para nuestros clientes.
+            Nuestro objetivo es brindar variedad, buena atención
+            y un servicio de calidad.
+        </p>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <h3>LICORES LOS PARCEROS</h3>
+
+        <p>Tu tienda de licores de confianza.</p>
+
+        <p>
+            © 2026 Licores Los Parceros.
+            Todos los derechos reservados.
+        </p>
+
+        <p>
+            Prohibida la venta de bebidas alcohólicas a menores de 18 años.
+            Consume responsablemente.
+        </p>
+
+    </footer>
 
 </body>
 </html>

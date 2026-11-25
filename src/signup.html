@@ -1,34 +1,361 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Store</title>
-    <link rel= "icon" type="image/png" href="src/icons/Main-Store-ICONO.png">
+
+    <title>Licores Los Parceros | Registro</title>
+
+    <!-- SB Admin 2 -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link href="../css/styles/signup.css" rel="stylesheet">
+
 </head>
+
 <body>
-    <h3>Register user form</h3>
 
-    <form name="register-forms" action="signup.php" method="post"> 
+    <div class="register-container">
 
-     <label>Firstname:</label><br> 
-     <input type="text" name="fname" required ><br><br>
-     <label>Lastname:</label><br>
-     <input type="text" name="lname" required ><br><br>
-     <label>Identification number:</label><br>
-     <input type="text" name="idnumber" required  ><br><br>
-     <label>Mobile phone</label><br>
-     <input type="text" name="mphone" required ><br><br>
-     <label>E-mail:</label><br>
-     <input type="email" name= "email" placeholder="edw@umariana.edu.co"  required><br><br>
-     <label>Password:</label><br>
-     <input type="password" name="pswd" required ><br><br>
+        <!-- PANEL IZQUIERDO -->
 
-     <button>Register</button>
+        <div class="register-banner">
 
-     </form>
-  </body>
+            <div class="banner-content">
+
+                <h1>
+                    LICORES
+                    <span>LOS PARCEROS</span>
+                </h1>
+
+                <div class="gold-line"></div>
+
+                <h3>¡Únete a nosotros!</h3>
+
+                <p>
+                    Crea tu cuenta y disfruta de una experiencia
+                    sencilla, con variedad de productos y
+                    excelente atención.
+                </p>
+
+                <div class="banner-icon">
+                    <i class="fas fa-wine-bottle"></i>
+                </div>
+
+            </div>
+
+            <div class="banner-footer">
+                TU TIENDA DE LICORES DE CONFIANZA
+            </div>
+
+        </div>
+
+
+        <!-- PANEL DERECHO -->
+
+        <div class="register-form-section">
+
+            <div class="register-box">
+
+                <!-- LOGO -->
+
+                <div class="register-logo">
+
+                    <i class="fas fa-wine-glass-alt"></i>
+
+                    <h2>LOS PARCEROS</h2>
+
+                    <p>CREAR UNA CUENTA</p>
+
+                </div>
+
+
+                <!-- BIENVENIDA -->
+
+                <div class="welcome-text">
+
+                    <h3>¡Bienvenido a nuestra familia!</h3>
+
+                    <p>Completa tus datos para registrarte.</p>
+
+                </div>
+
+
+                <!-- FORMULARIO -->
+
+              
+                    <form id="registerForm" action="signup.php" method="POST">
+
+                        <!-- NOMBRES Y APELLIDOS -->
+
+                        <div class="form-row">
+
+                            <div class="form-group col-md-6">
+                                <label for="fname">Nombres</label>
+
+                                <input
+                                    type="text"
+                                    id="fname"
+                                    name="fname"
+                                    class="form-control"
+                                    placeholder="Nombres"
+                                    required>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="lname">Apellidos</label>
+
+                                <input
+                                    type="text"
+                                    id="lname"
+                                    name="lname"
+                                    class="form-control"
+                                    placeholder="Apellidos"
+                                    required>
+                            </div>
+
+                        </div>
+
+
+                        <!-- DOCUMENTO -->
+
+                        <div class="form-group">
+                            <label for="idnumber">Número de documento</label>
+
+                            <input
+                                type="text"
+                                id="idnumber"
+                                name="idnumber"
+                                class="form-control"
+                                placeholder="Número de identificación"
+                                required>
+                        </div>
+
+
+                        <!-- CORREO -->
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+
+                            <div class="input-group">
+
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="Correo electrónico"
+                                    required>
+
+                            </div>
+                        </div>
+
+
+                        <!-- CELULAR -->
+
+                        <div class="form-group">
+                            <label for="mphone">Número de celular</label>
+
+                            <div class="input-group">
+
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-phone"></i>
+                                    </span>
+                                </div>
+
+                                <input
+                                    type="tel"
+                                    id="mphone"
+                                    name="mphone"
+                                    class="form-control"
+                                    placeholder="Número de celular"
+                                    required>
+
+                            </div>
+                        </div>
+
+
+                        <!-- CONTRASEÑA -->
+
+                        <div class="form-group">
+                            <label for="pswd">Contraseña</label>
+
+                            <div class="input-group">
+
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+
+                                <input
+                                    type="password"
+                                    id="pswd"
+                                    name="pswd"
+                                    class="form-control"
+                                    placeholder="Crea una contraseña"
+                                    minlength="8"
+                                    required>
+
+                                <div class="input-group-append">
+                                    <button
+                                        class="btn password-toggle"
+                                        type="button"
+                                        data-target="pswd">
+
+                                        <i class="fas fa-eye"></i>
+
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- CONFIRMAR CONTRASEÑA -->
+
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirmar contraseña</label>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                class="form-control"
+                                placeholder="Confirma tu contraseña"
+                                minlength="8"
+                                required>
+                        </div>
+
+
+                        <!-- TÉRMINOS -->
+
+                        <div class="terms">
+                            <label>
+                                <input type="checkbox" id="terms" required>
+                                Acepto los términos y condiciones y la política de
+                                tratamiento de datos.
+                            </label>
+                        </div>
+
+
+                        <!-- REGISTRAR -->
+
+                        <button type="submit" class="btn-register">
+                            <i class="fas fa-user-plus"></i>
+                            CREAR CUENTA
+                        </button>
+
+                    </form>
+
+
+
+                <!-- INICIAR SESIÓN -->
+
+                <div class="login-link">
+
+                    <p>¿Ya tienes una cuenta?</p>
+
+                    <a href="signin.html">
+                        Iniciar sesión
+                    </a>
+
+                </div>
+
+
+                <!-- VOLVER -->
+
+                <div class="back-home">
+
+                    <a href="../index.html">
+                        <i class="fas fa-arrow-left"></i>
+                        Volver a la página principal
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="copyright">
+                © 2026 Licores Los Parceros
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        // Mostrar y ocultar contraseñas
+
+        document.querySelectorAll(".password-toggle").forEach(button => {
+
+            button.addEventListener("click", function () {
+
+                const input = document.getElementById(
+                    this.dataset.target
+                );
+
+                const visible = input.type === "password";
+
+                input.type = visible ? "text" : "password";
+
+                this.innerHTML = visible
+                    ? '<i class="fas fa-eye-slash"></i>'
+                    : '<i class="fas fa-eye"></i>';
+
+                this.setAttribute(
+                    "aria-label",
+                    visible ? "Ocultar contraseña" : "Mostrar contraseña"
+                );
+
+            });
+
+        });
+
+
+        // Validar que las contraseñas coincidan
+
+            document.getElementById("registerForm").addEventListener(
+                "submit",
+                function (event) {
+
+                    const password = document.getElementById("pswd").value;
+
+                    const confirmPassword = document.getElementById(
+                        "confirmPassword"
+                    ).value;
+
+                    if (password !== confirmPassword) {
+
+                        event.preventDefault();
+
+                        alert("Las contraseñas no coinciden.");
+                    }
+                }
+            );
+    </script>
+
+</body>
 </html>
-
-
 
